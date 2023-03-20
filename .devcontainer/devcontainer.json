@@ -1,6 +1,8 @@
 {
-"image":"mcr.microsoft.com/devcontainers/universal:2"
-    // Configure tool-specific properties.
+"name":"CSC330 MySQL & Jupyter",
+"dockerComposeFile": "docker-compose.yml",
+
+// Configure tool-specific properties.
 ,"customizations": {
     // Configure properties specific to VS Code.
     "vscode": {
