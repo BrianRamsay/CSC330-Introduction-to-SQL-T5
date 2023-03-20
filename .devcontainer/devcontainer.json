@@ -1,9 +1,9 @@
 {
 "name":"CSC330 MySQL & Jupyter",
-"dockerComposeFile": "docker-compose.yml",
+"image": "mcr.microsoft.com/devcontainers/universal:2",
 
 // Configure tool-specific properties.
-,"customizations": {
+"customizations": {
     // Configure properties specific to VS Code.
     "vscode": {
       // Add the IDs of extensions you want installed when the container is created.
@@ -12,5 +12,11 @@
       ]
     }
   }
-  ,"postCreateCommand": "python -m pip install --upgrade pip; pip install --user -r requirements.txt"
+,
+"postCreateCommand": "python -m pip install --upgrade pip; pip install --user -r requirements.txt",
+"features": {
+	"ghcr.io/devcontainers-contrib/features/mysql-homebrew:1": {
+		"version": "latest"
+	}
+}
 }
